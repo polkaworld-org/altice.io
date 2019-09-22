@@ -1,0 +1,57 @@
+[package]
+name = "qrml-tokens"
+version = "0.1.0"
+authors = ["yijie37 <yijiehere@163.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.sr-std]
+git = "https://github.com/paritytech/substrate"
+rev = 'cc1d67e973fd02c0c997b164ba516cf041bf21f1'
+default_features = false
+
+[dependencies.parity-codec]
+version = "3.5"
+default-features = false
+
+[dependencies.parity-codec-derive]
+version = "2.0"
+default-features = false
+
+[dependencies.sr-primitives]
+git = "https://github.com/paritytech/substrate"
+rev = 'cc1d67e973fd02c0c997b164ba516cf041bf21f1'
+default-features = false
+
+
+[dependencies.srml-support]
+git = "https://github.com/paritytech/substrate"
+rev = 'cc1d67e973fd02c0c997b164ba516cf041bf21f1'
+default-features = false
+
+[dependencies.srml-system]
+git = "https://github.com/paritytech/substrate"
+rev = 'cc1d67e973fd02c0c997b164ba516cf041bf21f1'
+default_features = false
+
+[dependencies.srml-balances]
+git = "https://github.com/paritytech/substrate"
+rev = 'cc1d67e973fd02c0c997b164ba516cf041bf21f1'
+default_features = false
+
+#[dependencies.kvdb-rocksdb1]
+#git = "https://github.com/yijie37/kvdb-rocksdb-com.git"
+#rev = '2355525093d46a99a435dc25bd24a24114946e11'
+
+
+[features]
+default = ["std"]
+std=[
+  "sr-std/std",
+  "parity-codec/std",
+  "parity-codec-derive/std",
+  "sr-primitives/std",
+  "srml-support/std",
+  "srml-system/std"
+]

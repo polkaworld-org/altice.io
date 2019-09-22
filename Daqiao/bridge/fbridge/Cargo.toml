@@ -1,0 +1,25 @@
+[package]
+name = "fbridge"
+version = "0.1.0"
+authors = ["qizheng09 <qizheng09@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dependencies.primitives]
+default_features = false
+git = 'https://github.com/paritytech/substrate.git'
+package = 'substrate-primitives'
+rev = 'cc1d67e973fd02c0c997b164ba516cf041bf21f1'
+
+[dependencies.rstd]
+default_features = false
+git = 'https://github.com/paritytech/substrate.git'
+package = 'sr-std'
+rev = 'cc1d67e973fd02c0c997b164ba516cf041bf21f1'
+
+[dependencies.qrml-tokens]
+default_features = false
+path = '../../qrml/tokens'

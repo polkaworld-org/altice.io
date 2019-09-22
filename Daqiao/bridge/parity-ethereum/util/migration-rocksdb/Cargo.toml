@@ -1,0 +1,17 @@
+[package]
+name = "migration-rocksdb"
+version = "0.1.0"
+authors = ["Parity Technologies <admin@parity.io>"]
+
+[dependencies]
+log = "0.4"
+macros = { path = "../macros" }
+kvdb = "0.1"
+#kvdb-rocksdb = "0.1.4"
+#kvdb-rocksdb = {git = 'https://github.com/paritytech/parity-common.git', rev = 'b0317f649ab2c665b7987b8475878fc4d2e1f81d'}
+#kvdb-rocksdb1 = { version = "0.1.5", git = "https://github.com/yijie37/kvdb-rocksdb-com.git" }
+kvdb-rocksdb1 = { git = "https://github.com/yijie37/kvdb-rocksdb-com.git", rev = '2355525093d46a99a435dc25bd24a24114946e11'}
+
+
+[dev-dependencies]
+tempdir = "0.3"

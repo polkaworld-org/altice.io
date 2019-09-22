@@ -1,0 +1,29 @@
+[package]
+name = "parity-ethereum"
+version = "0.1.0"
+authors = ["yijie37 <yijiehere@163.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ansi_term = "0.11"
+atty = "0.2.8"
+rustc-hex = "1"
+#blooms-db = { path = "util/blooms-db" } #version
+#kvdb-rocksdb = { version = "0.1.3", optional = true }
+kvdb-rocksdb1 = { git = "https://github.com/yijie37/kvdb-rocksdb-com.git", rev = '2355525093d46a99a435dc25bd24a24114946e11' }
+
+clap = "2"
+#cli-signer= { path = "cli-signer" }
+#client-traits = { path = "ethcore/client-traits" }
+#common-types = { path = "ethcore/types" }
+#ctrlc = { git = "https://github.com/paritytech/rust-ctrlc.git" }
+#dir = { path = "util/dir" }
+#docopt = "1.0"
+#engine = { path = "ethcore/engine" }
+#ethcore = { path = "ethcore", features = ["parity"] }
+#ethcore-accounts = { path = "accounts", optional = true }
+#parity-util-mem = { version = "0.2.0", features = ["jemalloc-global"] }
+#parity-util-mem = "0.2.0"
+#malloc_size_of = { version = "0.2", package = "parity-util-mem" }
